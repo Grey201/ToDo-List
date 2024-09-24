@@ -1,16 +1,12 @@
 
 const mongoose = require("mongoose");
 const express = require("express");
-const bodyParser = require("body-parser");
-const path = require("path");
-const methodOverride=require('method-override')
+
 
 
 const app = express();
 const PORT = 3000;
 
-const app = express();
-const PORT = 3000;
 mongoose
   .connect("mongodb://localhost:27017/todo-list")
   .then(() => console.log("Connected to MongoDB"))
