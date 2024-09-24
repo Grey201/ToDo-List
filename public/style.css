@@ -1,0 +1,81 @@
+:root {
+  --main-color: #094c55;
+  --main-bg-color: #cedbdd;
+  --main-font-color: #fff;
+  --border-color: #f2f2f2;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  
+}
+
+h1 {
+  text-align: center;
+  color: var(--main-color);
+  padding: 10px;
+}
+button {
+  background-color: var(--main-color);
+  border: none;
+  color: var(--main-font-color);
+  padding: 5px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+li {
+  list-style-type: none;
+}
+input {
+  border: var(--border-color) 1px solid;
+  border-radius: 5px;
+  padding: 5px;
+  
+}
+input:focus {
+    outline: 1px solid var(--main-color);
+}
+
+textarea {
+  background-color: var(--main-bg-color);
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+textarea:focus {
+    outline: 1px solid var(--main-color);
+}
+
+.container {
+  margin: 10px auto;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 6px 3px 21px -1px rgba(34, 60, 80, 0.24);;
+}
+
+.addTask {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 10px
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid var(--border-color);
+  padding: 10px;
+  border-radius: 5px;
+  margin:10px;
+}
+.updateTask {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 300px;;
+}
