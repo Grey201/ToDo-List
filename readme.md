@@ -1,4 +1,7 @@
+
 # Express: маршруты и контроллеры HW
+
+Приложение TodoList, написанное на Express с подключением базы данных на Mongoose. 
 
 ### Задача 
 
@@ -12,12 +15,10 @@
 - Создайте контроллер для обработки операций с задачами.
 
 
-### Стек: | JavaScript| MongoDB| Express | mongoose | body-parser | ejs |
+### Стек: | JavaScript| MongoDB| Express | mongoose | body-parser | ejs | method-override | nodemon |
 
 
 ### Установка
-
-
 
 1. Сначала установите Node.js, если у вас его еще нет. Вы можете скачать его с [официального сайта Node.js](https://nodejs.org/).
 
@@ -39,6 +40,3 @@
 
 1. Запустите проект:
 ``` npm start ```
-
-
-
