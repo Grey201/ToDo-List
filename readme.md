@@ -1,4 +1,4 @@
-# Express: работа с базой данных leson и HW
+# Express: отображение данных leson и HW
 
 Приложение TodoList, написанное на Express с подключением базы данных на Mongoose. 
 
