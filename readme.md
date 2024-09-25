@@ -1,15 +1,14 @@
-# Express: отображение данных leson и HW
+# Express: работы с формами leson и HW
 
 Приложение TodoList, написанное на Express с подключением базы данных на Mongoose. 
 
 ### Задача
-1. Создайте формы для ввода данных.
-2. Реализуйте динамическое обновление данных.
-2. Сверьте отображаемые данные с базой данных.
+Предстоит доработать проект  с использованием шаблонизатора EJS и библиотеки express-validator:
+- Pеализуйте валидацию данных;
+- Pеализуйте обработку ошибок.
 
 
-### Стек: | JavaScript| MongoDB| Express | mongoose | body-parser | ejs | method-override | nodemon |
-
+### Стек: | JavaScript| MongoDB| Express | mongoose | body-parser | ejs | method-override | nodemon | express-validator | HTML | CSS |
 
 ### Установка
 

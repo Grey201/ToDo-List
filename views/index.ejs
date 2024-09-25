@@ -9,8 +9,16 @@
   <body>
     <div class="container">
       <h1>ToDo List</h1>
+      <% if(errors) { %>
+      <ul class="errors">
+        <% errors.forEach(error => { %>
+        <li class = "task error"><%=error.msg %></li>
+        <% }) %>
+      </ul>
+      <% } %>
       <form class="addTask" action="/todos" method="post">
-        <input type="text" name="title" placeholder="Title" required />
+        <!-- <input type="text" name="title" placeholder="Title" required /> -->
+        <input type="text" name="title" placeholder="Title" />
         <textarea name="description" placeholder="Description"></textarea>
         <button type="submit">Add To Do</button>
         <ul id="list"></ul>
@@ -18,7 +26,11 @@
       <ul>
         <% todos.forEach(todo => { %>
         <li class="task">
-          <form class="updateTask" action="/todos/update/<%= todo._id %>?_method=PUT" method="POST">
+          <form
+            class="updateTask"
+            action="/todos/update/<%= todo._id %>?_method=PUT"
+            method="POST"
+          >
             <input
               type="text"
               name="title"
@@ -32,7 +44,10 @@
             "checked": "" %> >
             <button type="submit">Update</button>
           </form>
-          <form action="/todos/delete/<%= todo._id %>?_method=delete" method="POST">
+          <form
+            action="/todos/delete/<%= todo._id %>?_method=delete"
+            method="POST"
+          >
             <button type="submit">Delete</button>
           </form>
         </li>
