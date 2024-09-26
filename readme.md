@@ -8,7 +8,7 @@
 - Pеализуйте обработку ошибок.
 
 
-### Стек: | JavaScript| MongoDB| Express | mongoose | body-parser | ejs | method-override | nodemon | express-validator | HTML | CSS |
+### Стек: | JavaScript| MongoDB| Express | mongoose | body-parser | ejs | method-override | nodemon | express-validator | HTML | CSS | dotenv |
 
 ### Установка
 
