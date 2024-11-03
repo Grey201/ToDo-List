@@ -18,6 +18,7 @@ mongoose
   });
 
 app.set("view engine", "ejs"); //выполняет настройку движка шаблонов ejs
+app.set('views', path.join(__dirname, 'views')); //указывает путь к папке с шаблонами
 app.use(bodyParser.urlencoded({ extended: true })); //сообщает Express, что нужно использовать bodyParser
 app.use(methodOverride("_method")); //сообщает Express, что нужно использовать methodOverride
 app.use(express.static(path.join(__dirname, "public"))); //создает абсалютный путь к папке  public
